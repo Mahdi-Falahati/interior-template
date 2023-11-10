@@ -1,13 +1,21 @@
+import { Container } from "@mui/material";
 import { Outlet } from "react-router-dom";
+
+import ResponsiveAppBar from "../components/ResponsiveAppBar";
+import Footer from "../components/Footer";
 
 export default function RootLayouts() {
   return (
-    <>
-      <header></header>
+    <Container>
+      <header>
+        <ResponsiveAppBar />
+      </header>
       <main>
         <Outlet />
       </main>
-      <footer></footer>
-    </>
+      <footer>
+        <Footer />
+      </footer>
+    </Container>
   );
 }

@@ -2,8 +2,10 @@ import { ThemeProvider, createTheme } from "@mui/material/styles";
 import { grey } from "@mui/material/colors";
 import { Box, Button, Stack, Typography } from "@mui/material";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
-import banner from "../assets/homePageBanner.png";
 import SimpleCard from "../components/SimpleCard";
+import CallIcon from "@mui/icons-material/Call";
+import banner from "../assets/homePageBanner.png";
+import kichen from "../assets/imagekichen.png";
 
 export default function HomePages() {
   return (
@@ -28,8 +30,8 @@ export default function HomePages() {
         <Stack
           sx={{
             height: "100%",
-            paddingLeft: "50px",
-            width: { xs: "100%", md: "40%" },
+            paddingLeft: { xs: 3, md: "50px" },
+            width: { xs: "90%", md: "40%" },
           }}
           flexDirection="column"
           justifyContent="center"
@@ -58,7 +60,12 @@ export default function HomePages() {
           </Button>
         </Stack>
       </Box>
-      <Stack flexDirection="row" flexWrap="wrap" justifyContent="space-around">
+      <Stack
+        my={5}
+        flexDirection="row"
+        flexWrap="wrap"
+        justifyContent="space-around"
+      >
         {Cards?.map((item, id) => (
           <SimpleCard
             title={item.title}
@@ -67,6 +74,63 @@ export default function HomePages() {
             key={id}
           />
         ))}
+      </Stack>
+      <Stack flexDirection="row" flexWrap="wrap" justifyContent="space-between">
+        <Stack
+          justifyContent="space-around"
+          sx={{
+            padding: "20px",
+            width: { xs: "100%", sm: "50%", md: "40%" },
+          }}
+        >
+          <Typography variant="h4" my={1}>
+            We Create The Art Of Stylish Living Stylishly
+          </Typography>
+          <Typography variant="button" my={1}>
+            It is a long established fact that a reader will be distracted by
+            the of readable content of a page when lookings at its layouts the
+            points of using that it has a more-or-less normal.
+          </Typography>
+          <Stack flexDirection="row" alignItems="center" my={1}>
+            <CallIcon
+              sx={{
+                background: "#F3EEEA",
+                padding: "15px",
+                borderRadius: "50%",
+                width: "35px",
+                height: "35px",
+                color: "orange",
+              }}
+            />
+            <Stack flexDirection="column" ml={2} my={1}>
+              <Typography variant="h6">012345678</Typography>
+              <Typography variant="subtitle1">Call Us Anytime</Typography>
+            </Stack>
+          </Stack>
+          <Button
+            my={1}
+            color="grey"
+            sx={{
+              color: "#fff",
+              height: "60px",
+              width: "250px",
+              borderRadius: "20px",
+            }}
+            variant="contained"
+            size="large"
+            endIcon={<ArrowForwardIcon />}
+          >
+            Get Free Estimate
+          </Button>
+        </Stack>
+        <Box
+          component="img"
+          sx={{
+            width: { xs: "100%", sm: "55%", md: "45%" },
+          }}
+          alt="kichen"
+          src={kichen}
+        />
       </Stack>
     </ThemeProvider>
   );

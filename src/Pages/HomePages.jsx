@@ -3,6 +3,7 @@ import { grey } from "@mui/material/colors";
 import { Box, Button, Stack, Typography } from "@mui/material";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import banner from "../assets/homePageBanner.png";
+import SimpleCard from "../components/SimpleCard";
 
 export default function HomePages() {
   return (
@@ -57,6 +58,34 @@ export default function HomePages() {
           </Button>
         </Stack>
       </Box>
+      <Stack flexDirection="row" flexWrap="wrap" justifyContent="space-around">
+        {Cards?.map((item, id) => (
+          <SimpleCard
+            title={item.title}
+            description={item.description}
+            btnText="Read More"
+            key={id}
+          />
+        ))}
+      </Stack>
     </ThemeProvider>
   );
 }
+
+const Cards = [
+  {
+    title: "Project Plan",
+    description:
+      "There are many variations of the passages of lorem Ipsum from available, majority.",
+  },
+  {
+    title: "Interior Work",
+    description:
+      "There are many variations of the passages of lorem Ipsum from available, majority.",
+  },
+  {
+    title: "Realization",
+    description:
+      "There are many variations of the passages of lorem Ipsum from available, majority.",
+  },
+];

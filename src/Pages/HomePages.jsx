@@ -6,6 +6,10 @@ import SimpleCard from "../components/SimpleCard";
 import CallIcon from "@mui/icons-material/Call";
 import banner from "../assets/homePageBanner.png";
 import kichen from "../assets/imagekichen.png";
+import CardInfoPerson from "../components/CardInfoPerson";
+import p1 from "../assets/p1.jpg";
+import p2 from "../assets/p2.jpg";
+import p3 from "../assets/p3.jpg";
 
 export default function HomePages() {
   return (
@@ -132,6 +136,34 @@ export default function HomePages() {
           src={kichen}
         />
       </Stack>
+      <Box
+        sx={{
+          background: "#F4F0EC",
+          borderRadius: "30px",
+          textAlign: "center",
+        }}
+        py={5}
+        my={5}
+      >
+        <Typography variant="h4">What the People Thinks</Typography>
+        <Typography variant="h4">About Us</Typography>
+        <Stack
+          my={4}
+          justifyContent="center"
+          flexDirection="row"
+          flexWrap="wrap"
+        >
+          {CardsInfo?.map((item, id) => (
+            <CardInfoPerson
+              key={id}
+              name={item.name}
+              info={item.info}
+              address={item.address}
+              img={item.img}
+            />
+          ))}
+        </Stack>
+      </Box>
     </ThemeProvider>
   );
 }
@@ -151,5 +183,26 @@ const Cards = [
     title: "Realization",
     description:
       "There are many variations of the passages of lorem Ipsum from available, majority.",
+  },
+];
+
+const CardsInfo = [
+  {
+    name: "Nattasha Mith",
+    info: "Lorem Ipsum is simply dummy text of the typesetting industry. Ipsum has been.",
+    address: "Sydney, USA",
+    img: p3,
+  },
+  {
+    name: "Raymond Galario",
+    info: "Lorem Ipsum is simply dummy text of the typesetting industry. Ipsum has been.",
+    address: "Sydney, Australia",
+    img: p1,
+  },
+  {
+    name: "Benny Roll",
+    info: "Lorem Ipsum is simply dummy text of the typesetting industry. Ipsum has been.",
+    address: "Sydney, New York",
+    img: p2,
   },
 ];

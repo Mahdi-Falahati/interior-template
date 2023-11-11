@@ -16,6 +16,7 @@ import b3 from "../assets/Brand/03.svg";
 import b4 from "../assets/Brand/04.svg";
 import b5 from "../assets/Brand/05.svg";
 import OurProjects from "../components/OurProjects";
+import WebsiteInfo from "../components/WebsiteInfo";
 
 export default function HomePages() {
   return (
@@ -187,6 +188,7 @@ export default function HomePages() {
         ))}
       </Stack>
       <OurProjects />
+      <WebsiteInfo />
     </ThemeProvider>
   );
 }

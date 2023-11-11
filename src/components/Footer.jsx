@@ -11,7 +11,7 @@ import AlternateEmailIcon from "@mui/icons-material/AlternateEmail";
 
 export default function Footer() {
   return (
-    <Box sx={{ flexGrow: 1 }}>
+    <Box sx={{ flexGrow: 1 }} mt={5}>
       <Grid
         container
         spacing={2}

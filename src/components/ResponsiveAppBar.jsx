@@ -92,7 +92,7 @@ export default function ResponsiveAppBar() {
               open={Boolean(anchorElNav)}
               onClose={handleCloseNavMenu}
               sx={{
-                display: { xs: "block", md: "none",textAlign:"center" },
+                display: { xs: "block", md: "none", textAlign: "center" },
               }}
             >
               {pages.map((page) => (

@@ -15,6 +15,7 @@ import b2 from "../assets/Brand/02.svg";
 import b3 from "../assets/Brand/03.svg";
 import b4 from "../assets/Brand/04.svg";
 import b5 from "../assets/Brand/05.svg";
+import OurProjects from "../components/OurProjects";
 
 export default function HomePages() {
   return (
@@ -170,11 +171,22 @@ export default function HomePages() {
         </Stack>
       </Box>
 
-      <Stack sx={{margin:"100px 0px"}} direction="row" justifyContent="space-around" flexWrap="wrap">
+      <Stack
+        sx={{ margin: "100px 0px" }}
+        direction="row"
+        justifyContent="space-around"
+        flexWrap="wrap"
+      >
         {Brands?.map((brand, key) => (
-          <img src={brand} key={key} alt="Brand" style={{margin:"15px",height:"30px"}} />
+          <img
+            src={brand}
+            key={key}
+            alt="Brand"
+            style={{ margin: "15px", height: "30px" }}
+          />
         ))}
       </Stack>
+      <OurProjects />
     </ThemeProvider>
   );
 }

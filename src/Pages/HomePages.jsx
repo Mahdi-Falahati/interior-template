@@ -10,6 +10,11 @@ import CardInfoPerson from "../components/CardInfoPerson";
 import p1 from "../assets/p1.jpg";
 import p2 from "../assets/p2.jpg";
 import p3 from "../assets/p3.jpg";
+import b1 from "../assets/Brand/01.svg";
+import b2 from "../assets/Brand/02.svg";
+import b3 from "../assets/Brand/03.svg";
+import b4 from "../assets/Brand/04.svg";
+import b5 from "../assets/Brand/05.svg";
 
 export default function HomePages() {
   return (
@@ -79,7 +84,7 @@ export default function HomePages() {
           />
         ))}
       </Stack>
-      <Stack flexDirection="row" flexWrap="wrap" justifyContent="space-between">
+      <Stack flexWrap="wrap" justifyContent="space-between" flexDirection="row">
         <Stack
           justifyContent="space-around"
           sx={{
@@ -130,7 +135,7 @@ export default function HomePages() {
         <Box
           component="img"
           sx={{
-            width: { xs: "100%", sm: "55%", md: "45%" },
+            width: { xs: "100%", sm: "40%", md: "45%" },
           }}
           alt="kichen"
           src={kichen}
@@ -164,6 +169,12 @@ export default function HomePages() {
           ))}
         </Stack>
       </Box>
+
+      <Stack sx={{margin:"100px 0px"}} direction="row" justifyContent="space-around" flexWrap="wrap">
+        {Brands?.map((brand, key) => (
+          <img src={brand} key={key} alt="Brand" style={{margin:"15px",height:"30px"}} />
+        ))}
+      </Stack>
     </ThemeProvider>
   );
 }
@@ -206,3 +217,5 @@ const CardsInfo = [
     img: p2,
   },
 ];
+
+const Brands = [b1, b2, b3, b4, b5];

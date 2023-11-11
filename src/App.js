@@ -5,11 +5,12 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import RootLayouts from "./layouts/RootLayouts";
+import HomePages from "./Pages/HomePages";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<RootLayouts />}>
-      <Route />
+      <Route index element={<HomePages />} />
     </Route>
   )
 );

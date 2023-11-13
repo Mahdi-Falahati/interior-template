@@ -8,10 +8,11 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import LocalPhoneIcon from "@mui/icons-material/LocalPhone";
 import AlternateEmailIcon from "@mui/icons-material/AlternateEmail";
+import { Container } from "@mui/material";
 
 export default function Footer() {
   return (
-    <Box sx={{ flexGrow: 1 }} mt={5}>
+    <Container sx={{ flexGrow: 1 }} mt={5}>
       <Grid
         container
         spacing={2}
@@ -124,7 +125,7 @@ export default function Footer() {
           </Typography>
         </Grid>
       </Grid>
-    </Box>
+    </Container>
   );
 }
 

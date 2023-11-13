@@ -1,5 +1,6 @@
 import { Button, Stack, Typography } from "@mui/material";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
+import { BigButton } from "./Buttons";
 
 export default function Join() {
   return (
@@ -22,20 +23,11 @@ export default function Join() {
       <Typography variant="subtitle2" my={1}>
         It is a long established fact will be distracted.
       </Typography>
-      <Button
-        my={1}
+      <BigButton
         color="warning"
-        sx={{
-          height: "60px",
-          width: "200px",
-          borderRadius: "20px",
-        }}
-        variant="contained"
-        size="large"
-        endIcon={<ArrowForwardIcon />}
-      >
-        Get Started
-      </Button>
+        title="Get Started"
+        icon={<ArrowForwardIcon />}
+      />
     </Stack>
   );
 }

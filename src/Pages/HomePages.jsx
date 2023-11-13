@@ -1,6 +1,6 @@
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 import { grey } from "@mui/material/colors";
-import { Box, Button, Stack, Typography } from "@mui/material";
+import { Box, Stack, Typography } from "@mui/material";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import SimpleCard from "../components/SimpleCard";
 import { Container } from "@mui/material";

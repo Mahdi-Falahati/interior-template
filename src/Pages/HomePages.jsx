@@ -1,5 +1,3 @@
-import { ThemeProvider, createTheme } from "@mui/material/styles";
-import { grey } from "@mui/material/colors";
 import { Box, Stack, Typography } from "@mui/material";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import SimpleCard from "../components/SimpleCard";
@@ -21,19 +19,11 @@ import WebsiteInfo from "../components/WebsiteInfo";
 import ArticleNews from "../components/ArticleNews";
 import Join from "../components/Join";
 import { BigButton } from "../components/Buttons";
+import CustomTheme from "../components/CustomTheme";
 
 export default function HomePages() {
   return (
-    <ThemeProvider
-      theme={createTheme({
-        palette: {
-          grey: {
-            main: grey[800],
-            dark: grey[900],
-          },
-        },
-      })}
-    >
+    <CustomTheme>
       <Container>
         <Box
           sx={{
@@ -183,7 +173,7 @@ export default function HomePages() {
         <ArticleNews />
         <Join />
       </Container>
-    </ThemeProvider>
+    </CustomTheme>
   );
 }
 

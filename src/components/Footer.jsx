@@ -1,4 +1,4 @@
-import { Box, Grid, Stack, Typography } from "@mui/material";
+import { Box, Grid, Stack, Typography, Container } from "@mui/material";
 import { Link } from "react-router-dom";
 import logo from "../assets/Logo.png";
 import TwitterIcon from "@mui/icons-material/Twitter";
@@ -8,7 +8,6 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import LocalPhoneIcon from "@mui/icons-material/LocalPhone";
 import AlternateEmailIcon from "@mui/icons-material/AlternateEmail";
-import { Container } from "@mui/material";
 
 export default function Footer() {
   return (

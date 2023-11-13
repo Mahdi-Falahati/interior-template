@@ -20,6 +20,7 @@ import OurProjects from "../components/OurProjects";
 import WebsiteInfo from "../components/WebsiteInfo";
 import ArticleNews from "../components/ArticleNews";
 import Join from "../components/Join";
+import { BigButton } from "../components/Buttons";
 
 export default function HomePages() {
   return (
@@ -58,21 +59,11 @@ export default function HomePages() {
               There are many variations of the passages of lorem Ipsum
               fromavailable, majority.
             </Typography>
-            <Button
-              my={1}
+            <BigButton
               color="grey"
-              sx={{
-                color: "#fff",
-                height: "60px",
-                width: "200px",
-                borderRadius: "20px",
-              }}
-              variant="contained"
-              size="large"
-              endIcon={<ArrowForwardIcon />}
-            >
-              Get Started
-            </Button>
+              title="Get Started"
+              icon={<ArrowForwardIcon />}
+            />
           </Stack>
         </Box>
         <Stack
@@ -126,21 +117,11 @@ export default function HomePages() {
                 <Typography variant="subtitle1">Call Us Anytime</Typography>
               </Stack>
             </Stack>
-            <Button
-              my={1}
+            <BigButton
               color="grey"
-              sx={{
-                color: "#fff",
-                height: "60px",
-                width: "250px",
-                borderRadius: "20px",
-              }}
-              variant="contained"
-              size="large"
-              endIcon={<ArrowForwardIcon />}
-            >
-              Get Free Estimate
-            </Button>
+              title="Get Free Estimate"
+              icon={<ArrowForwardIcon />}
+            />
           </Stack>
           <Box
             component="img"

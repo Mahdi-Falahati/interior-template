@@ -8,6 +8,7 @@ export default function WebsiteInfo() {
       justifyContent="space-around"
       alignItems="center"
       flexWrap="wrap"
+      my={2}
     >
       <Stack
         sx={{
@@ -22,7 +23,7 @@ export default function WebsiteInfo() {
       </Stack>
       <Box
         sx={{
-          display: { sm: "none", md: "inline-block" },
+          display: { xs: "none", md: "inline-block" },
           background: "#CDA274",
           width: "2px",
           height: "85px",
@@ -41,7 +42,7 @@ export default function WebsiteInfo() {
       </Stack>
       <Box
         sx={{
-          display: { sm: "none", md: "inline-block" },
+          display: { xs: "none", md: "inline-block" },
           background: "#CDA274",
           width: "2px",
           height: "85px",
@@ -60,7 +61,7 @@ export default function WebsiteInfo() {
       </Stack>
       <Box
         sx={{
-          display: { sm: "none", md: "inline-block" },
+          display: { xs: "none", md: "inline-block" },
           background: "#CDA274",
           width: "2px",
           height: "85px",

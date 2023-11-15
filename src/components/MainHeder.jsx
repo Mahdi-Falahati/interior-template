@@ -29,7 +29,7 @@ export default function MainHeder({ banner }) {
           borderTopLeftRadius: "40px",
           borderTopRightRadius: "40px",
           height: "120px",
-          width: "280px",
+          width: { xs: "250px", sm: "280px" },
         }}
       >
         <Typography variant="h5" fontWeight="bold" letterSpacing="2px">

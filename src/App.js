@@ -9,6 +9,7 @@ import HomePages from "./Pages/HomePages";
 import AboutUs from "./Pages/AboutUs";
 import Services from "./Pages/Services";
 import ServiceSingle from "./Pages/ServisceSingle";
+import Pricing from "./Pages/Pricing";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -17,6 +18,7 @@ const router = createBrowserRouter(
       <Route path="/about-us" element={<AboutUs />} />
       <Route path="/services" element={<Services />} />
       <Route path="/service-single" element={<ServiceSingle />} />
+      <Route path="/pricing" element={<Pricing />} />
     </Route>
   )
 );

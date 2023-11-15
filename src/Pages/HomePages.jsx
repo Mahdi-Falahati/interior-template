@@ -20,6 +20,7 @@ import ArticleNews from "../components/ArticleNews";
 import Join from "../components/Join";
 import { BigButton } from "../components/Buttons";
 import CustomTheme from "../components/CustomTheme";
+import RenderBrands from "../components/RenderBrands";
 
 export default function HomePages() {
   return (
@@ -151,21 +152,7 @@ export default function HomePages() {
           </Stack>
         </Box>
 
-        <Stack
-          sx={{ margin: "100px 0px" }}
-          direction="row"
-          justifyContent="space-around"
-          flexWrap="wrap"
-        >
-          {Brands?.map((brand, key) => (
-            <img
-              src={brand}
-              key={key}
-              alt="Brand"
-              style={{ margin: "15px", height: "30px" }}
-            />
-          ))}
-        </Stack>
+        <RenderBrands Brands={Brands} />
         <OurProjects />
       </Container>
       <WebsiteInfo />

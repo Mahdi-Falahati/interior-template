@@ -4,12 +4,15 @@ import {
   Route,
   RouterProvider,
 } from "react-router-dom";
+
 import RootLayouts from "./layouts/RootLayouts";
+
 import HomePages from "./Pages/HomePages";
 import AboutUs from "./Pages/AboutUs";
 import Services from "./Pages/Services";
 import ServiceSingle from "./Pages/ServisceSingle";
 import Pricing from "./Pages/Pricing";
+import Project from "./Pages/Project";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -19,6 +22,7 @@ const router = createBrowserRouter(
       <Route path="/services" element={<Services />} />
       <Route path="/service-single" element={<ServiceSingle />} />
       <Route path="/pricing" element={<Pricing />} />
+      <Route path="/our-project" element={<Project />} />
     </Route>
   )
 );

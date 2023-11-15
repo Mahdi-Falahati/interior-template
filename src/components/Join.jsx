@@ -8,7 +8,7 @@ export default function Join() {
       sx={{
         borderRadius: "30px",
         height: "280px",
-        margin: "20px 0px",
+        margin: "50px 0px",
         padding: "10px",
         background: "#292F36",
         color: "#fff",

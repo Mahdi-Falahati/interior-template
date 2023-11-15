@@ -1,5 +1,5 @@
 import { Box, Container, Stack, Typography } from "@mui/material";
-import MainHeder from "../components/MainHeder";
+import MainHeader from "../components/MainHeder";
 import HowWework from "../components/HowWework";
 import SimpleCard from "../components/SimpleCard";
 import Join from "../components/Join";
@@ -17,7 +17,7 @@ import i4 from "../assets/services/i4.png";
 export default function Services() {
   return (
     <>
-      <MainHeder banner={banner} />
+      <MainHeader banner={banner} />
       <Container>
         <Stack
           my={5}

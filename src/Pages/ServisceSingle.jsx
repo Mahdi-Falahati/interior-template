@@ -1,6 +1,6 @@
 import { Box, Container, Grid, Typography } from "@mui/material";
 
-import MainHeder from "../components/MainHeder";
+import MainHeader from "../components/MainHeder";
 import WebsiteInfo from "../components/WebsiteInfo";
 import banner from "../assets/serviseSingle/banner.jpg";
 import RenderBrands from "../components/RenderBrands";
@@ -19,7 +19,7 @@ import VideoPlayer from "../components/VideoPlayer";
 export default function ServiceSingle() {
   return (
     <>
-      <MainHeder banner={banner} />
+      <MainHeader banner={banner} />
       <Container>
         <CustomTheme>
           <Box

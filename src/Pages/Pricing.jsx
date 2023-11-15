@@ -1,6 +1,6 @@
 import { Container, Stack } from "@mui/material";
 
-import MainHeder from "../components/MainHeder";
+import MainHeader from "../components/MainHeder";
 import PricingCard from "../components/PricingCard";
 
 import banner from "../assets/pricing/banner.jpg";
@@ -8,7 +8,7 @@ import banner from "../assets/pricing/banner.jpg";
 export default function Pricing() {
   return (
     <>
-      <MainHeder banner={banner} />
+      <MainHeader banner={banner} />
       <Container>
         <Stack
           flexDirection="row"

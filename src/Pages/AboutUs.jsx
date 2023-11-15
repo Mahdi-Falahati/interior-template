@@ -1,4 +1,4 @@
-import MainHeder from "../components/MainHeder";
+import MainHeader from "../components/MainHeder";
 import PictureText from "../components/PictureText";
 
 import { Stack, Typography, Container, Box } from "@mui/material";
@@ -21,7 +21,7 @@ import CustomTheme from "../components/CustomTheme";
 export default function AboutUs() {
   return (
     <CustomTheme>
-      <MainHeder banner={banner} />
+      <MainHeader banner={banner} />
       <Container>
         <Stack
           flexDirection="column"

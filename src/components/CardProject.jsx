@@ -1,12 +1,17 @@
 import { Box, Card, CardContent, CardMedia, Typography } from "@mui/material";
 import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 
-export default function CardProject({ img, name, subject, h }) {
+export default function CardProject({ img, name, subject, w, h }) {
   return (
-    <Card sx={{ width: { xs: "90%", sm: "40%" }, margin: "20px" }}>
+    <Card
+      sx={{
+        width: `${w ? "auto" : { xs: "90%", sm: "40%" }}`,
+        margin: "20px",
+      }}
+    >
       <CardMedia
         component="img"
-        sx={{ height: `${h ? h : 194}` }}
+        sx={{ height: `${h ? "auto" : 194}` }}
         image={img}
         alt="Paella dish"
       />

@@ -1,7 +1,7 @@
 import { Box, Typography, Stack } from "@mui/material";
 import { useLocation } from "react-router-dom";
 
-export default function MainHeder({ banner }) {
+export default function MainHeder({ banner, Show = true }) {
   const { pathname } = useLocation();
   const path = pathname
     .substring(1)
@@ -21,22 +21,24 @@ export default function MainHeder({ banner }) {
         alignItems: "center",
       }}
     >
-      <Stack
-        alignItems="center"
-        justifyContent="center"
-        sx={{
-          background: "#fff",
-          borderTopLeftRadius: "40px",
-          borderTopRightRadius: "40px",
-          height: "120px",
-          width: { xs: "250px", sm: "280px" },
-        }}
-      >
-        <Typography variant="h5" fontWeight="bold" letterSpacing="2px">
-          {path}
-        </Typography>
-        <Typography variant="caption">Home / {path}</Typography>
-      </Stack>
+      {Show && (
+        <Stack
+          alignItems="center"
+          justifyContent="center"
+          sx={{
+            background: "#fff",
+            borderTopLeftRadius: "40px",
+            borderTopRightRadius: "40px",
+            height: "120px",
+            width: { xs: "250px", sm: "280px" },
+          }}
+        >
+          <Typography variant="h5" fontWeight="bold" letterSpacing="2px">
+            {path}
+          </Typography>
+          <Typography variant="caption">Home / {path}</Typography>
+        </Stack>
+      )}
     </Box>
   );
 }

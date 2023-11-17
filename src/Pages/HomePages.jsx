@@ -14,6 +14,10 @@ import b2 from "../assets/Brand/02.svg";
 import b3 from "../assets/Brand/03.svg";
 import b4 from "../assets/Brand/04.svg";
 import b5 from "../assets/Brand/05.svg";
+import an1 from "../assets/News/p1.png";
+import an2 from "../assets/News/p2.png";
+import an3 from "../assets/News/p3.png";
+
 import OurProjects from "../components/OurProjects";
 import WebsiteInfo from "../components/WebsiteInfo";
 import ArticleNews from "../components/ArticleNews";
@@ -157,7 +161,31 @@ export default function HomePages() {
       </Container>
       <WebsiteInfo />
       <Container>
-        <ArticleNews />
+        <Box
+          sx={{
+            textAlign: "center",
+            padding: "40px 0px",
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+          }}
+        >
+          <Typography variant="h4">Articles & News</Typography>
+          <Typography variant="body1" sx={{ width: { xs: "100%", md: "50%" } }}>
+            It is a long established fact that a reader will be distracted by
+            the of readable content of page lookings at its layouts points.
+          </Typography>
+        </Box>
+        <Stack
+          flexDirection="row"
+          flexWrap="wrap"
+          justifyContent="space-around"
+        >
+          {News?.map((news) => (
+            <ArticleNews news={news} />
+          ))}
+        </Stack>
+
         <Join />
       </Container>
     </CustomTheme>
@@ -204,3 +232,27 @@ const CardsInfo = [
 ];
 
 const Brands = [b1, b2, b3, b4, b5];
+
+const News = [
+  {
+    id: 1,
+    design: "Kitchan Design",
+    title: "Let’s Get Solution For Building Construction Work",
+    date: "26 December,2022 ",
+    img: an1,
+  },
+  {
+    id: 2,
+    design: "Living Design",
+    title: "Low Cost Latest Invented Interior DesigningIdeas.",
+    date: "22 December,2022 ",
+    img: an3,
+  },
+  {
+    id: 3,
+    design: "Interior Design",
+    title: "Best For Any Office & Business Interior Solution",
+    date: "25 December,2022 ",
+    img: an2,
+  },
+];

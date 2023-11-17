@@ -2,10 +2,9 @@ import Box from "@mui/material/Box";
 import Tab from "@mui/material/Tab";
 import TabContext from "@mui/lab/TabContext";
 import TabList from "@mui/lab/TabList";
-import TabPanel from "@mui/lab/TabPanel";
 import { useState } from "react";
 
-export default function TabsSimple() {
+export default function TabsSimple({ title }, children) {
   const [value, setValue] = useState("1");
 
   const handleChange = (e, newValue) => {
@@ -38,44 +37,23 @@ export default function TabsSimple() {
             textColor="inherit"
             onChange={handleChange}
           >
-            <Tab
-              sx={{
-                margin: "0px 10px",
-                background: "#CDA274",
-                color: "#FFF",
-                borderRadius: "15px",
-                padding: "5px 30px",
-              }}
-              label="Item One"
-              value="1"
-            />
-            <Tab
-              sx={{
-                margin: "0px 10px",
-                background: "#CDA274",
-                color: "#FFF",
-                borderRadius: "15px",
-                padding: "5px 30px",
-              }}
-              label="Item Two"
-              value="2"
-            />
-            <Tab
-              sx={{
-                margin: "0px 10px",
-                background: "#CDA274",
-                color: "#FFF",
-                borderRadius: "15px",
-                padding: "5px 30px",
-              }}
-              label="Item Three"
-              value="3"
-            />
+            {title?.map((title, index) => (
+              <Tab
+                key={index + 1}
+                sx={{
+                  margin: "0px 10px",
+                  background: "#CDA274",
+                  color: "#FFF",
+                  borderRadius: "15px",
+                  padding: "5px 30px",
+                }}
+                label={title}
+                value={String(index + 1)}
+              />
+            ))}
           </TabList>
         </Box>
-        <TabPanel value="1">Item One</TabPanel>
-        <TabPanel value="2">Item Two</TabPanel>
-        <TabPanel value="3">Item Three</TabPanel>
+        {children}
       </TabContext>
     </Box>
   );

@@ -5,15 +5,25 @@ import TabList from "@mui/lab/TabList";
 import TabPanel from "@mui/lab/TabPanel";
 import { useState } from "react";
 
-export default function LabTabs() {
+export default function TabsSimple() {
   const [value, setValue] = useState("1");
 
-  const handleChange = (event, newValue) => {
+  const handleChange = (e, newValue) => {
     setValue(newValue);
   };
 
   return (
-    <Box sx={{ width: "100%", typography: "body1" }}>
+    <Box
+      sx={{
+        margin: "30px 0px",
+        width: "100%",
+        typography: "body1",
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        justifyContent: "center",
+      }}
+    >
       <TabContext value={value}>
         <Box
           sx={{

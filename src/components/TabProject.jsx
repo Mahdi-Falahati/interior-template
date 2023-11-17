@@ -3,8 +3,9 @@ import Tab from "@mui/material/Tab";
 import TabContext from "@mui/lab/TabContext";
 import TabList from "@mui/lab/TabList";
 import { useState } from "react";
+import { TabPanel } from "@mui/lab";
 
-export default function TabsSimple({ title }, children) {
+export default function TabProject({ title, item }) {
   const [value, setValue] = useState("1");
 
   const handleChange = (e, newValue) => {
@@ -53,7 +54,9 @@ export default function TabsSimple({ title }, children) {
             ))}
           </TabList>
         </Box>
-        {children}
+        {item?.map((item, index) => (
+          <TabPanel value={String(index + 1)}>{item}</TabPanel>
+        ))}
       </TabContext>
     </Box>
   );

@@ -1,6 +1,6 @@
 import { Box, Container, Grid, Typography } from "@mui/material";
 
-import MainHeader from "../components/MainHeder";
+import MainHeader from "../components/MainHeader";
 import WebsiteInfo from "../components/WebsiteInfo";
 import banner from "../assets/serviseSingle/banner.jpg";
 import RenderBrands from "../components/RenderBrands";

@@ -1,6 +1,6 @@
 import { Container, Stack } from "@mui/material";
 
-import MainHeader from "../components/MainHeder";
+import MainHeader from "../components/MainHeader";
 import PricingCard from "../components/PricingCard";
 
 import banner from "../assets/pricing/banner.jpg";

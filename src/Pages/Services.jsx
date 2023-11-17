@@ -1,5 +1,5 @@
 import { Box, Container, Stack, Typography } from "@mui/material";
-import MainHeader from "../components/MainHeder";
+import MainHeader from "../components/MainHeader";
 import HowWework from "../components/HowWework";
 import SimpleCard from "../components/SimpleCard";
 import Join from "../components/Join";

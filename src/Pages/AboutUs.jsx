@@ -1,4 +1,4 @@
-import MainHeader from "../components/MainHeder";
+import MainHeader from '../components/MainHeader';
 import PictureText from "../components/PictureText";
 
 import { Stack, Typography, Container, Box } from "@mui/material";

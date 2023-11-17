@@ -1,16 +1,9 @@
-import {
-  Box,
-  Card,
-  CardContent,
-  CardMedia,
-  Stack,
-  Typography,
-} from "@mui/material";
-import ChevronRightIcon from "@mui/icons-material/ChevronRight";
+import { Box, Stack, Typography } from "@mui/material";
 import p1 from "../assets/OurProjects/p1.png";
 import p2 from "../assets/OurProjects/p2.png";
 import p3 from "../assets/OurProjects/p3.png";
 import p4 from "../assets/OurProjects/p4.png";
+import CardProject from "./CardProject";
 
 export default function OurProjects() {
   return (
@@ -30,35 +23,12 @@ export default function OurProjects() {
       </Typography>
       <Stack flexDirection="row" flexWrap="wrap" justifyContent="space-around">
         {Projects?.map((project) => (
-          <Card
+          <CardProject
             key={project.id}
-            sx={{ width: { xs: "90%", sm: "40%" }, margin: "20px" }}
-          >
-            <CardMedia
-              component="img"
-              height="194"
-              image={project.img}
-              alt="Paella dish"
-            />
-            <CardContent
-              sx={{ display: "flex", justifyContent: "space-between" }}
-            >
-              <Box textAlign="left">
-                <Typography variant="h6">{project.name}</Typography>
-                <Typography variant="button">{project.subject.join(" / ")}</Typography>
-              </Box>
-              <ChevronRightIcon
-                sx={{
-                  background: "#999",
-                  height: "30px",
-                  width: "30px",
-                  color: "#fff",
-                  borderRadius: "50%",
-                  cursor: "pointer",
-                }}
-              />
-            </CardContent>
-          </Card>
+            img={project.img}
+            name={project.name}
+            subject={project.subject}
+          />
         ))}
       </Stack>
     </Box>

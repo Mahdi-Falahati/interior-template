@@ -1,4 +1,4 @@
-import MainHeader from '../components/MainHeader';
+import MainHeader from "../components/MainHeader";
 import PictureText from "../components/PictureText";
 
 import { Stack, Typography, Container, Box } from "@mui/material";
@@ -17,37 +17,18 @@ import pepole2 from "../assets/aboutus/pepole2.png";
 import pepole3 from "../assets/aboutus/pepole3.png";
 
 import CustomTheme from "../components/CustomTheme";
+import Qout from "../components/Qout";
 
 export default function AboutUs() {
   return (
     <CustomTheme>
       <MainHeader banner={banner} />
       <Container>
-        <Stack
-          flexDirection="column"
-          alignItems="center"
-          sx={{
-            margin: "100px",
-            textAlign: "center",
-          }}
-          my={4}
-        >
-          <Box
-            sx={{
-              width: { xs: "100%", sm: "50%" },
-              border: "15px solid #F4F0EC",
-              borderRadius: "20px",
-              padding: "20px",
-            }}
-          >
-            <Typography variant="h3">“</Typography>
-            <Typography variant="h5" fontStyle="italic">
-              I like an interior that defies labeling. I don't really want
-              someone to walk into a room and know that I did it
-            </Typography>
-            <Typography variant="caption">-BUNNY WILLIAMS</Typography>
-          </Box>
-        </Stack>
+        <Qout
+          title=" I like an interior that defies labeling. I don't really want someone
+          to walk into a room and know that I did it"
+          caption="BUNNY WILLIAMS"
+        />
         <Stack>
           {PictureTexts?.map((item) => (
             <PictureText

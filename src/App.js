@@ -15,6 +15,7 @@ import Pricing from "./Pages/Pricing";
 import Project from "./Pages/Project";
 import ProjectDetails from "./Pages/ProjectDetails";
 import Blog from "./Pages/Blog";
+import BlogDetails from "./Pages/BlogDetails";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -27,6 +28,7 @@ const router = createBrowserRouter(
       <Route path="/our-project" element={<Project />} />
       <Route path="/project-details" element={<ProjectDetails />} />
       <Route path="/articles-news" element={<Blog />} />
+      <Route path="/blog-details" element={<BlogDetails />} />
     </Route>
   )
 );

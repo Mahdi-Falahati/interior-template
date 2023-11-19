@@ -14,9 +14,14 @@ export default function CardProfessional({ pic, icons }) {
         alt="kichen"
         src={pic}
       />
-      <Stack>
+      <Stack
+        flexDirection="row"
+        flexWrap="wrap"
+        justifyContent="center"
+        alignItems="center"
+      >
         {icons?.map((icon, id) => (
-          <Box key={id} variant="a" href="#">
+          <Box key={id} ml={1} variant="a" href="#">
             {icon}
           </Box>
         ))}

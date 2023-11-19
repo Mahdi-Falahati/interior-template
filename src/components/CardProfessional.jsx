@@ -1,6 +1,6 @@
-import { Stack, Box } from "@mui/material";
+import { Stack, Box, Typography } from "@mui/material";
 
-export default function CardProfessional({ pic, icons }) {
+export default function CardProfessional({ pic, icons, workType, name }) {
   return (
     <Stack>
       <Box
@@ -14,6 +14,12 @@ export default function CardProfessional({ pic, icons }) {
         alt="kichen"
         src={pic}
       />
+      <Typography variant="h5" mt={3}>
+        {name}
+      </Typography>
+      <Typography variant="caption" mt={1} mb={3}>
+        {workType}
+      </Typography>
       <Stack
         flexDirection="row"
         flexWrap="wrap"

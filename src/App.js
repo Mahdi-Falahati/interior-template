@@ -18,6 +18,7 @@ import Blog from "./Pages/Blog";
 import BlogDetails from "./Pages/BlogDetails";
 import Team from "./Pages/Team";
 import Changelog from "./Pages/Changelog";
+import Restricted from "./Pages/Restricted";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -33,7 +34,7 @@ const router = createBrowserRouter(
       <Route path="/blog-details" element={<BlogDetails />} />
       <Route path="/our-professional" element={<Team />} />
       <Route path="/changelog" element={<Changelog />} />
-      <Route path="/restricted-page" element={<Changelog />} />
+      <Route path="/restricted-page" element={<Restricted />} />
     </Route>
   )
 );

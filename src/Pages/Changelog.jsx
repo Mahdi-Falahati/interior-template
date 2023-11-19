@@ -16,7 +16,7 @@ export default function Changelog() {
         <Box
           sx={{
             margin: "120px 0px",
-            background: "red",
+            background: "#F4F0EC",
             width: { xs: "95%", sm: "85%", md: "70%" },
             padding: "90px 0px",
             textAlign: "center",

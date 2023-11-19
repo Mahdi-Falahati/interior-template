@@ -33,6 +33,7 @@ const router = createBrowserRouter(
       <Route path="/blog-details" element={<BlogDetails />} />
       <Route path="/our-professional" element={<Team />} />
       <Route path="/changelog" element={<Changelog />} />
+      <Route path="/restricted-page" element={<Changelog />} />
     </Route>
   )
 );

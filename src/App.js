@@ -17,6 +17,7 @@ import ProjectDetails from "./Pages/ProjectDetails";
 import Blog from "./Pages/Blog";
 import BlogDetails from "./Pages/BlogDetails";
 import Team from "./Pages/Team";
+import Changelog from "./Pages/Changelog";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -31,6 +32,7 @@ const router = createBrowserRouter(
       <Route path="/articles-news" element={<Blog />} />
       <Route path="/blog-details" element={<BlogDetails />} />
       <Route path="/our-professional" element={<Team />} />
+      <Route path="/changelog" element={<Changelog />} />
     </Route>
   )
 );

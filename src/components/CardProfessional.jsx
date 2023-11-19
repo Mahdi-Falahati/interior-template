@@ -2,7 +2,7 @@ import { Stack, Box, Typography } from "@mui/material";
 
 export default function CardProfessional({ pic, icons, workType, name }) {
   return (
-    <Stack>
+    <Box mx={4}>
       <Box
         component="img"
         sx={{
@@ -32,6 +32,6 @@ export default function CardProfessional({ pic, icons, workType, name }) {
           </Box>
         ))}
       </Stack>
-    </Stack>
+    </Box>
   );
 }

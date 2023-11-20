@@ -181,8 +181,8 @@ export default function HomePages() {
           flexWrap="wrap"
           justifyContent="space-around"
         >
-          {News?.map((news) => (
-            <ArticleNews news={news} />
+          {News?.map((news, id) => (
+            <ArticleNews key={id} news={news} />
           ))}
         </Stack>
 

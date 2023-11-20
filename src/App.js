@@ -21,6 +21,7 @@ import Changelog from "./Pages/Changelog";
 import Restricted from "./Pages/Restricted";
 import Licenses from "./Pages/Licenses";
 import PageNotFound from "./Pages/PageNotFound";
+import FAQ from "./Pages/FAQ";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -38,6 +39,7 @@ const router = createBrowserRouter(
       <Route path="/changelog" element={<Changelog />} />
       <Route path="/restricted-page" element={<Restricted />} />
       <Route path="/licenses" element={<Licenses />} />
+      <Route path="/faq" element={<FAQ />} />
       <Route path="*" element={<PageNotFound />} />
     </Route>
   )

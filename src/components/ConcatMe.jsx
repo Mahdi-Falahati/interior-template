@@ -1,4 +1,7 @@
 import { Box, Grid, TextField, Typography } from "@mui/material";
+import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
+import { BigButton } from "./Buttons";
+import CustomTheme from "./CustomTheme";
 
 export default function ConcatMe({ title }) {
   return (
@@ -47,6 +50,15 @@ export default function ConcatMe({ title }) {
             rows={4}
             variant="standard"
           />
+        </Grid>
+        <Grid item xs={12}>
+          <CustomTheme>
+            <BigButton
+              title="Send Now"
+              icon={<ArrowForwardIcon />}
+              color="grey"
+            />
+          </CustomTheme>
         </Grid>
       </Grid>
     </Box>

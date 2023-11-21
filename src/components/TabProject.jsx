@@ -75,8 +75,8 @@ export default function TabProject() {
                 <Grid item xs={12} sm={6}>
                   {ProjectsLeft?.map((project) => (
                     <CardProject
-                      h={true}
-                      w={true}
+                      h="auto"
+                      w="auto"
                       key={project.id}
                       img={project.img}
                       name={project.name}
@@ -88,6 +88,7 @@ export default function TabProject() {
                   {ProjectsRight?.map((project) => (
                     <CardProject
                       h="auto"
+                      w="auto"
                       key={project.id}
                       img={project.img}
                       name={project.name}

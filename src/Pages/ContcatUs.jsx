@@ -52,7 +52,7 @@ export default function ContcatUs() {
             <Grid
               item
               xs={12}
-              sm={3}
+              sm={5}
               mb={10}
               sx={{
                 background: "#F4F0EC",
@@ -96,7 +96,7 @@ export default function ContcatUs() {
                 </Box>
               </Stack>
             </Grid>
-            <Grid item xs={12} sm={9}>
+            <Grid item xs={12} sm={7}>
               <Grid container spacing={2}>
                 <Grid item xs={12}>
                   <Typography variant="h4">Leave a Reply</Typography>

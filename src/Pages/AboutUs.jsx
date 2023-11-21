@@ -2,8 +2,6 @@ import MainHeader from "../components/MainHeader";
 import PictureText from "../components/PictureText";
 
 import { Stack, Typography, Container, Box } from "@mui/material";
-import TextField from "@mui/material/TextField";
-import Grid from "@mui/material/Grid";
 
 import banner from "../assets/aboutus/Banner.png";
 import p1 from "../assets/aboutus/p1.jpg";

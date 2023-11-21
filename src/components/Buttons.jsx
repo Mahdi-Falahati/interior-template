@@ -8,7 +8,7 @@ export function BigButton({ title, icon, color }) {
       sx={{
         color: "#fff",
         height: "60px",
-        width: "230px",
+        width: "250px",
         borderRadius: "20px",
       }}
       variant="contained"

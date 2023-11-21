@@ -12,8 +12,16 @@ import { useState } from "react";
 import logo from "../assets/Logo.png";
 import { Stack } from "@mui/material";
 import SearchModal from "./SearchModal";
+import { Link } from "react-router-dom";
 
-const pages = ["Home", "Pages", "Services", "Project", "Blog", "Contact"];
+const pages = [
+  { title: "Home", link: "/" },
+  { title: "Pages", link: "/pages" },
+  { title: "Services", link: "/services" },
+  { title: "Project", link: "/our-project" },
+  { title: "Blog", link: "/blog-details" },
+  { title: "Contact", link: "/contcat-us" },
+];
 
 export default function ResponsiveAppBar() {
   const [anchorElNav, setAnchorElNav] = useState(null);
@@ -63,7 +71,9 @@ export default function ResponsiveAppBar() {
                   textDecoration: "none",
                 }}
               >
-                Interno
+                <Link to="/" style={{ color: "#000", textDecoration: "none" }}>
+                  Interno
+                </Link>
               </Typography>
             </Stack>
 
@@ -98,7 +108,12 @@ export default function ResponsiveAppBar() {
               >
                 {pages.map((page) => (
                   <MenuItem key={page} onClick={handleCloseNavMenu}>
-                    <Typography textAlign="center">{page}</Typography>
+                    <Link
+                      to={page.link}
+                      style={{ color: "#000", textDecoration: "none" }}
+                    >
+                      <Typography textAlign="center">{page.title}</Typography>
+                    </Link>
                   </MenuItem>
                 ))}
                 <SearchModal />
@@ -130,7 +145,9 @@ export default function ResponsiveAppBar() {
                 textDecoration: "none",
               }}
             >
-              Interno
+              <Link to="/" style={{ color: "#000", textDecoration: "none" }}>
+                Interno
+              </Link>
             </Typography>
 
             <Box sx={{ display: { xs: "none", md: "flex" } }}>
@@ -144,7 +161,12 @@ export default function ResponsiveAppBar() {
                     display: "block",
                   }}
                 >
-                  {page}
+                  <Link
+                    to={page.link}
+                    style={{ color: "#000", textDecoration: "none" }}
+                  >
+                    {page.title}
+                  </Link>
                 </Button>
               ))}
               <SearchModal />

@@ -131,10 +131,10 @@ export default function Footer() {
 const linkStle = { textDecoration: "none", margin: "5px 0px", color: "#444" };
 const Pages = [
   { title: "About Us", link: "/about-us" },
-  { title: "Our Projects", link: "/our-projects" },
-  { title: "Our Team", link: "/our-team" },
-  { title: "Concat Us", link: "/concatus" },
-  { title: "Servises", link: "/servises" },
+  { title: "Our Projects", link: "/our-project" },
+  { title: "Our Team", link: "/our-professional" },
+  { title: "Concat Us", link: "/contcat-us" },
+  { title: "Servises", link: "/services" },
 ];
 const Servises = [
   { title: "Kitchan", link: "/kitchan" },

@@ -23,6 +23,7 @@ import Licenses from "./Pages/Licenses";
 import PageNotFound from "./Pages/PageNotFound";
 import FAQ from "./Pages/FAQ";
 import TeamSingle from "./Pages/TeamSingle";
+import ContcatUs from "./Pages/ContcatUs";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -42,6 +43,7 @@ const router = createBrowserRouter(
       <Route path="/licenses" element={<Licenses />} />
       <Route path="/faq" element={<FAQ />} />
       <Route path="/professional-single" element={<TeamSingle />} />
+      <Route path="/contcat-us" element={<ContcatUs />} />
       <Route path="*" element={<PageNotFound />} />
     </Route>
   )

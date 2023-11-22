@@ -71,9 +71,7 @@ export default function ResponsiveAppBar() {
                   textDecoration: "none",
                 }}
               >
-                <Link to="/" style={{ color: "#000", textDecoration: "none" }}>
-                  Interno
-                </Link>
+                Interno
               </Typography>
             </Stack>
 
@@ -145,13 +143,11 @@ export default function ResponsiveAppBar() {
                 textDecoration: "none",
               }}
             >
-              <Link to="/" style={{ color: "#000", textDecoration: "none" }}>
-                Interno
-              </Link>
+              Interno
             </Typography>
 
             <Box sx={{ display: { xs: "none", md: "flex" } }}>
-              {pages.map((page,id) => (
+              {pages.map((page, id) => (
                 <Button
                   key={id}
                   onClick={handleCloseNavMenu}

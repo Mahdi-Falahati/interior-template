@@ -106,8 +106,8 @@ export default function ResponsiveAppBar() {
                   display: { xs: "block", md: "none", textAlign: "center" },
                 }}
               >
-                {pages.map((page) => (
-                  <MenuItem key={page} onClick={handleCloseNavMenu}>
+                {pages.map((page, id) => (
+                  <MenuItem key={id} onClick={handleCloseNavMenu}>
                     <Link
                       to={page.link}
                       style={{ color: "#000", textDecoration: "none" }}

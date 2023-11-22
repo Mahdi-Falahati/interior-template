@@ -69,10 +69,10 @@ export default function HomePages() {
         >
           {Cards?.map((item, id) => (
             <SimpleCard
+              key={id}
               title={item.title}
               description={item.description}
               btnText="Read More"
-              key={id}
             />
           ))}
         </Stack>

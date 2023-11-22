@@ -1,6 +1,5 @@
 import {
   Box,
-  CardMedia,
   Container,
   Grid,
   Stack,
@@ -22,7 +21,7 @@ import { BigButton } from "../components/Buttons";
 import CustomTheme from "../components/CustomTheme";
 
 import banner from "../assets/contcatUs/banner.jpg";
-import mp from "../assets/map.png";
+import MapChart from "../MapChart";
 
 export default function ContcatUs() {
   return (
@@ -171,13 +170,7 @@ export default function ContcatUs() {
             </Grid>
           </Grid>
         </Box>
-
-        <CardMedia
-          component="img"
-          image={mp}
-          alt="LastPost"
-          sx={{ borderRadius: "40px", height: "350px", marginBottom: "100px" }}
-        />
+        <MapChart />
       </Container>
     </>
   );

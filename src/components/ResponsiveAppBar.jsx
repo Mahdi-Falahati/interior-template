@@ -151,9 +151,9 @@ export default function ResponsiveAppBar() {
             </Typography>
 
             <Box sx={{ display: { xs: "none", md: "flex" } }}>
-              {pages.map((page) => (
+              {pages.map((page,id) => (
                 <Button
-                  key={page}
+                  key={id}
                   onClick={handleCloseNavMenu}
                   sx={{
                     my: 2,

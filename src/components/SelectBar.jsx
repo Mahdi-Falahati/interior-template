@@ -1,10 +1,9 @@
-import { Typography, Box } from "@mui/material";
+import { Typography } from "@mui/material";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import Button from "@mui/material/Button";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
-import WidgetsIcon from "@mui/icons-material/Widgets";
 
 export default function SelectBar({ defaultValue, opt }) {
   const [anchorEl, setAnchorEl] = useState(null);

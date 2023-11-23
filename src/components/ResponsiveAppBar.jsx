@@ -13,10 +13,10 @@ import logo from "../assets/Logo.png";
 import { Stack } from "@mui/material";
 import SearchModal from "./SearchModal";
 import { Link } from "react-router-dom";
+import SelectBar from "./SelectBar";
 
 const pages = [
   { title: "Home", link: "/" },
-  { title: "Pages", link: "/pages" },
   { title: "Services", link: "/services" },
   { title: "Project", link: "/our-project" },
   { title: "Blog", link: "/blog-details" },
@@ -114,6 +114,7 @@ export default function ResponsiveAppBar() {
                     </Link>
                   </MenuItem>
                 ))}
+                <SelectBar defaultValue="Pages" opt={options} />
                 <SearchModal />
               </Menu>
             </Box>
@@ -165,6 +166,7 @@ export default function ResponsiveAppBar() {
                   </Link>
                 </Button>
               ))}
+              <SelectBar defaultValue="Pages" opt={options} />
               <SearchModal />
             </Box>
           </Toolbar>
@@ -173,3 +175,17 @@ export default function ResponsiveAppBar() {
     </Container>
   );
 }
+
+const options = [
+  { l: "/pricing", t: "Pricing" },
+  { l: "/changelog", t: "Change Log" },
+  { l: "/licenses", t: "Licenses" },
+  { l: "/about-us", t: "About Us" },
+  { l: "/service-single", t: "Service Single" },
+  { l: "/project-details", t: "Project Details" },
+  { l: "/articles-news", t: "Articles News" },
+  { l: "/our-professional", t: "Our Professional" },
+  { l: "/professional-single", t: "Professional Single" },
+  { l: "/restricted-page", t: "Restricted Page" },
+  { l: "/faq", t: "FAQ's" },
+];
